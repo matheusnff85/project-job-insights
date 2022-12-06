@@ -6,10 +6,13 @@ def get_max_salary(path: str) -> int:
     read_data = read(path)
     set_list = set()
     for item in read_data:
-        if item["salary"] != "":
-            set_list.add(item["salary"])
+        if item["max_salary"] != "":
+            set_list.add(int(item["max_salary"]))
     salary_list = list(set_list)
     return max(salary_list)
+
+
+print(get_max_salary("data/jobs.csv"))
 
 
 def get_min_salary(path: str) -> int:
