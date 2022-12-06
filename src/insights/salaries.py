@@ -6,7 +6,7 @@ def get_max_salary(path: str) -> int:
     read_data = read(path)
     set_list = set()
     for item in read_data:
-        if item["max_salary"] != "":
+        if item["max_salary"] != "" and item["max_salary"].isdigit():
             set_list.add(int(item["max_salary"]))
     salary_list = list(set_list)
     return max(salary_list)
@@ -16,7 +16,7 @@ def get_min_salary(path: str) -> int:
     read_data = read(path)
     set_list = set()
     for item in read_data:
-        if item["min_salary"] != "":
+        if item["min_salary"] != "" and item["max_salary"].isdigit():
             set_list.add(int(item["min_salary"]))
     salary_list = list(set_list)
     return min(salary_list)
