@@ -16,7 +16,7 @@ def get_min_salary(path: str) -> int:
     read_data = read(path)
     set_list = set()
     for item in read_data:
-        if item["min_salary"] != "" and item["max_salary"].isdigit():
+        if item["min_salary"] != "" and item["min_salary"].isdigit():
             set_list.add(int(item["min_salary"]))
     salary_list = list(set_list)
     return min(salary_list)
