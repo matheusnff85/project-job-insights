@@ -6,4 +6,4 @@ def test_counter():
 
 
 def test_counter2():
-    assert count_ocurrences("data/jobs.csv", "Java") == 676
+    assert count_ocurrences("data/jobs.csv", "Ruby") == 83
