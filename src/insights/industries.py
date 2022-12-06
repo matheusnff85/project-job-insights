@@ -3,6 +3,17 @@ from .jobs import read
 
 
 def get_unique_industries(path: str) -> List[str]:
+    """Checks all different industries and returns a list of them
+    Must call `read`
+    Parameters
+    ----------
+    path : str
+        Must be passed to `read`
+    Returns
+    -------
+    list
+        List of unique industries
+    """
     read_data = read(path)
     set_list = set()
     for item in read_data:
