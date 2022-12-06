@@ -5,7 +5,7 @@ import csv
 
 @lru_cache
 def read(path: str) -> List[Dict]:
-    with open(f"{path}.csv", encoding="utf8") as file:
+    with open(path, encoding="utf8") as file:
         readfile = csv.DictReader(file, delimiter=",", quotechar='"')
         data = []
         for row in readfile:
