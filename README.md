@@ -28,9 +28,13 @@
 
   - `python3 -m pip install -r dev-requirements.txt`
 
-  4. Inicialize o Flask com o comando: `flask run`
+  4. Inicialize o Flask com o comando
+  
+  - `flask run`
 
-  5. Acesse a aplicação em seu navegador pelo endereço: `http://127.0.0.1:5000/` ou `http://localhost:5000/`
+  5. Acesse a aplicação em seu navegador pelo endereço: 
+  
+  - `http://127.0.0.1:5000/` ou `http://localhost:5000/`
 
 ---
 
